@@ -1830,7 +1830,7 @@ body.overlay__active::before {
     background: #241f22;
     right: 0;
     z-index: 99;
-    padding: 10px 0;
+    padding: 5px 0;
     -webkit-box-shadow: 0 0 7px rgba(0, 0, 0, .15);
     box-shadow: 0 0 7px rgba(0, 0, 0, .15);
     -webkit-transition: .3s;
@@ -2002,19 +2002,17 @@ body.overlay__active::before {
 }
 
 .main__logo--img {
-    max-width: 145px;
-    display: block
+    display: block;
+    height: 65px;
 }
 
 @media only screen and (min-width:480px) {
     .main__logo--img {
-        max-width: 160px
     }
 }
 
 @media only screen and (min-width:768px) {
     .main__logo--img {
-        max-width: 100%
     }
 }
 
@@ -7939,6 +7937,13 @@ input.quickview__value--number {
     padding: 0 10px;
     color: #fff;
     font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search__filter--select label img {
+    height: 28px;
+    width: 28px;
 }
 
 @media only screen and (min-width:1200px) {
@@ -7997,14 +8002,11 @@ input.quickview__value--number {
     }
 }
 
-.search__filter--form__style2 {
-
-}
 
 .search__filter--form__style2 .grid-filter {
     gap: 2rem;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 @media only screen and (min-width:1200px) {
@@ -13160,7 +13162,7 @@ details>summary::-webkit-details-marker {
     background: #0000001f;
     right: 0;
     z-index: 99;
-    padding: 10px 0;
+    padding: 5px 0;
     -webkit-box-shadow: 0 0 7px rgb(0 0 0 / 15%);
     box-shadow: 0 0 7px rgb(0 0 0 / 15%);
     -webkit-transition: .3s;
